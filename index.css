@@ -1,53 +1,61 @@
 /* Estilos CSS */
+@font-face {
+    font-family: Comforter+Brush;
+    src: url('https://fonts.googleapis.com/css2?');
+}
 body {
     margin: 0;
     padding: 0;
-  }
-  
-  header {
+}
+
+header {
     display: flex;
+    /* background-image: ; */
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: #f2f2f2;
-  }
-  
-  .logo {
-    border: 1px solid black;
+}
+
+.logo {
+    margin-left: 40%;
     font-size: 24px;
     font-weight: bold;
-  }
-  
-  nav {
+    font-size: large;
+}
+
+nav {
     display: flex;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin-right: 10px;
-  }
-  
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    align-items: center;
     padding: 20px;
-  }
-  
-  .post {
+    background-color: #f2f2f2;
+}
+
+.post {
     width: 80%;
     margin-bottom: 20px;
     background-color: #f9f9f9;
     padding: 20px;
-  }
-  
-  .sidebar {
+}
+
+.sidebar {
     width: 20%;
     padding: 20px;
     background-color: #f2f2f2;
-  }
+}
