@@ -3,16 +3,19 @@
     font-family: Comforter+Brush;
     src: url('https://fonts.googleapis.com/css2?');
 }
+
 body {
     margin: 0;
     padding: 0;
 }
+
 .advertising {
     border: 2px solid black;
     margin-top: 1%;
     width: 100%;
-    
+
 }
+
 header {
     display: flex;
     /* background-image: ; */
@@ -44,6 +47,22 @@ nav ul li {
 }
 
 .content {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    align-items: center;
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+.post1 {
+    border: 2px solid black;
+    background-color: aqua;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.content2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
