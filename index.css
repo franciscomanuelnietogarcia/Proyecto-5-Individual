@@ -7,7 +7,12 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.advertising {
+    border: 2px solid black;
+    margin-top: 1%;
+    width: 100%;
+    
+}
 header {
     display: flex;
     /* background-image: ; */
