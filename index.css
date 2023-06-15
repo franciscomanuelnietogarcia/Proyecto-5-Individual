@@ -1,7 +1,7 @@
 /* Estilos CSS */
 @font-face {
-    font-family: Comforter+Brush;
-    src: url('https://fonts.googleapis.com/css2?');
+    font-family: AlexBrush-Regular;
+    src: url(letras/AlexBrush-Regular.ttf);
 }
 
 body {
@@ -26,6 +26,8 @@ header {
 }
 
 .logo {
+    font-family: AlexBrush-Regular;
+    font-size: 200px;
     margin-left: 40%;
     font-size: 24px;
     font-weight: bold;
