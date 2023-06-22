@@ -9,63 +9,135 @@
 </head>
 
 <body>
-    <!-- <header> -->
-    <div class="Admin">
-        <ul class="parallel-list1">
-            <li><a href="#">Admin</a></li>
-            <li><a href="#">ES</a></li>
-        </ul>
-        <!-- </div>
-    <h2 onclick="openLoginModal()">Login</h2>
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeLoginModal()">&times;</span>
-            <h2>Admin</h2>
-            <form>
-                <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username" required><br>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required><br>
-                <button type="submit">Login</button>
-            </form>
-        </div>
-    </div> -->
-        <div>
-            <img src="img/Giralda-Sevilla.jpg" alt="Imagen" class="advertising">
-        </div>
-        <div class="logo">ArquitecturasFrank</div>
+    <header class="container-header">
+
+        <h1>Arquitectura-Frank</h1>
         <nav>
-            <ul class="parallel-list2">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Obras</a></li>
-                <li><a href="#">Mapa</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="works.html">Obras</a></li>
+                <li><a href="map.html">Mapa</a></li>
+                <li><a href="proyects.html">Proyectos</a></li>
+                <li><a href="Admin.html">Admin</a></li>
             </ul>
         </nav>
-        </header>
-        <div class="content">
-            <div class="post1" style="width: 45%;">Contenido del post 1</div>
-            <div class="post1" style="width: 45%;">Contenido del post 2</div>
-        </div>
-        <div class="content2">
-            <div class="post" style="width: 20%;">Contenido del post 3</div>
-            <div class="post" style="width: 20%;">Contenido del post 4</div>
-            <div class="post" style="width: 20%;">Contenido del post 5</div>
-            <div class="post" style="width: 20%;">Contenido del post 6</div>
-            <div class="post" style="width: 20%;">Contenido del post 7</div>
-            <div class="post" style="width: 20%;">Contenido del post 8</div>
-            <div class="post" style="width: 20%;">Contenido del post 9</div>
-            <div class="post" style="width: 20%;">Contenido del post 10</div>
-            <div class="post" style="width: 20%;">Contenido del post 11</div>
-            <div class="post" style="width: 20%;">Contenido del post 12</div>
-            <div class="post" style="width: 20%;">Contenido del post 13</div>
-            <div class="post" style="width: 20%;">Contenido del post 14</div>
-        </div>
+    </header>
 
-        <div class="sidebar">
-            <img src="ruta-a-la-imagen.jpg" alt="Imagen lateral">
+    <main>
+        <section id="articulos">
+            <div class="grid-item1" style="background-image: url(img/PlacioArtes&Ciencias-Valencia.jpg);">
+                <h3>Artículo 1</h3>
+                <p>Contenido del artículo 1.</p>
+                <button class="leer-mas" onclick="toggleContent(this)">Leer más</button>
+                <div class="more-content">El Palacio de las Artes y las Ciencias de Valencia es un complejo
+                    arquitectónico ubicado en la ciudad de Valencia, España. Diseñado por el arquitecto valenciano
+                    Santiago Calatrava, el conjunto se compone de varios edificios icónicos que combinan diseño
+                    vanguardista y funcionalidad.
+
+                    ·El edificio principal del complejo es el Palacio de las Artes, también conocido como el Teatro de
+                    la Ópera. Su diseño futurista destaca por su gran estructura de vidrio y metal, con una cubierta que
+                    se asemeja a una flor. El interior del palacio alberga cuatro salas de espectáculos, incluyendo una
+                    sala de ópera, una sala de conciertos, una sala de ballet y un teatro de cámara.
+
+                    Junto al Palacio de las Artes se encuentra el Hemisférico, un impresionante edificio en forma de ojo
+                    humano que alberga un cine IMAX y un planetario. Su diseño único se compone de una gran esfera y un
+                    ala en forma de vela, ambos recubiertos de paneles reflectantes.
+
+                    ·El tercer elemento arquitectónico importante es el Museo de las Ciencias Príncipe Felipe, un
+                    edificio interactivo y moderno que busca fomentar la divulgación científica. Su diseño se inspira en
+                    la estructura de un esqueleto de dinosaurio y cuenta con una cubierta en forma de cascada.
+
+                    ·Estos tres edificios principales están conectados por un largo corredor cubierto conocido como el
+                    Ágora, un espacio multifuncional utilizado para eventos culturales y exposiciones</div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item2" style="background-image: url(img/LaSagradaFamilia-Barcelona.jpg);">
+                    <h3>Artículo 2</h3>
+                    <p>Contenido del artículo 2.</p>
+                    <button class="leer-mas" onclick="toggleContent(this)">Leer más</button>
+                    <div class="more-content"> La Sagrada Familia de Barcelona es una basílica extraordinaria que
+                        combina la innovación arquitectónica, la simbología religiosa y la belleza estética.
+
+                        Su diseño único y su continuidad en la construcción a lo largo de los años la convierten en una
+                        joya arquitectónica incomparable y en uno de los destinos turísticos más populares de Barcelona.
+                    </div>
+                    <h2>Sagrada Familia de Barcelona</h2>
+                </div>
+                <div class="grid-item3" style="background-image: url(img/CasaBatllo-Barcelona.jpg);">
+                    <h3>Artículo 3</h3>
+                    <p>Contenido del artículo 3.</p>
+                    <button class="leer-mas" onclick="toggleContent(this)">Leer más</button>
+                    <div class="more-content"> La Casa Batlló es una obra maestra de la arquitectura modernista,
+                        caracterizada por su diseño innovador, su uso de formas orgánicas y su rica ornamentación.
+
+                        Es un testimonio del talento y la visión artística de Antoni Gaudí, y una visita obligada para
+                        aquellos que buscan apreciar la belleza y la originalidad arquitectónica en Barcelona.</div>
+                    <h2>Casa Batlló de Barcelona</h2>
+                </div>
+                <div class="grid-item4" style="background-image: url(img/Mezquita-Cordoba.jpg);">
+                    <h3>Artículo 4</h3>
+                    <p>Contenido del artículo 4.</p>
+                    <button class="leer-mas" onclick="toggleContent(this)">Leer más</button>
+                    <div class="more-content"> La Mezquita de Córdoba es una obra maestra arquitectónica que fusiona
+                        elementos islámicos y cristianos.
+
+                        Su impresionante estructura, con su intrincada red de arcos y columnas, y su rica historia la
+                        convierten en un importante símbolo de la convivencia de diferentes culturas y religiones en la
+                        historia de España.</div>
+                    <h2>Mezquita de Córdoba</h2>
+                </div>
+                <div class="grid-item5" style="background-image: url(img/Giralda-Sevilla.jpg);">
+                    <h3>Artículo 5</h3>
+                    <p>Contenido del artículo 5.</p>
+                    <button class="leer-mas" onclick="toggleContent(this)">Leer más</button>
+                    <div class="more-content"> La Giralda es una torre campanario de notable arquitectura islámica
+                        ubicada en Sevilla.
+
+                        Con su elegante diseño y su historia fascinante, se ha convertido en un símbolo emblemático de
+                        la ciudad y un lugar imperdible para los visitantes que desean explorar su patrimonio cultural y
+                        disfrutar de vistas panorámicas únicas.</div>
+                    <h2>Giralda de Sevilla</h2>
+                </div>
+                <div class="grid-item6" style="background-image: url(img/Teatro-Romano-Mérida.jpg);">
+                    <h3>Artículo 6</h3>
+                    <p>Contenido del artículo 6.</p>
+                    <button class="leer-mas" onclick="toggleContent(this)">Leer más</button>
+                    <div class="more-content"> El Teatro Romano de Mérida es un destacado ejemplo de la arquitectura
+                        romana y un importante sitio histórico en España.
+
+                        Su diseño clásico, su estado de conservación y su uso continuo en la actualidad lo convierten en
+                        una visita obligada para los amantes de la historia y la arquitectura antigua.</div>
+                    <h2>Teatro Romano de Mérida</h2>
+                </div>
+                <div class="grid-item7" style="background-image: url(img/Anfiteatro-Romano-Mérida.jpg);">
+                    <h3>Artículo 7</h3>
+                    <p>Contenido del artículo 7.</p>
+                    <button class="leer-mas" onclick="toggleContent(this)">Leer más</button>
+                    <div class="more-content"> El Anfiteatro Romano de Mérida es un destacado ejemplo de la arquitectura
+                        romana y una atracción turística imperdible para aquellos interesados en la historia y la
+                        cultura romana.
+
+                        Su diseño impresionante y su estado de conservación hacen que sea una visita fascinante para los
+                        amantes de la arquitectura y la historia antigua.</div>
+                    <h2>Anfiteatro Romano de Mérida</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <button id="btnVolverArriba" class="boton-flotante">Volver arriba</button> -->
+    <footer>
+        <div class="footer-item">
+            <img src="img/logo-don-bosco.png" alt="Imagen 1">
         </div>
+        <div class="footer-item">
+            <img src="img/logo-ayuntamiento-merida.png" alt="Imagen 2">
+        </div>
+        <div class="footer-item">
+            <img src="img/logo-factoria-f5.jpeg" alt="Imagen 3">
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

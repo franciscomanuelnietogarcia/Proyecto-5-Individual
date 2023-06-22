@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Admin.css">
 </head>
 <body>
-    <h1>Admin Entradas</h1>
+    <header class="container-header">
 
-  <form id="entrada-form">
-    <h2>Agregar Entrada</h2>
-    <label for="titulo">Título:</label>
-    <input type="text" id="titulo" required>
-    <br>
-    <label for="contenido">Contenido:</label>
-    <textarea id="contenido" required></textarea>
-    <br>
-    <button type="submit">Agregar</button>
-  </form>
-
-  <h2>Entradas existentes</h2>
-  <ul id="entrada-list"></ul>
-
-  <script src="script.js"></script>
+        <h1>Arquitectura-Frank</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="works.html">Obras</a></li>
+                <li><a href="map.html">Mapa</a></li>
+                <li><a href="proyects.html">Proyectos</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+            </ul>
+        </nav>
+      </header>
+    
+      <h1>Agregar</h1>
+      <form onsubmit="event.preventDefault(); enviarFormulario();">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required>
+    
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" required></textarea>
+    
+        <label for="imagen">Imagen:</label>
+        <input type="file" id="imagen" accept="image/*" required>
+    
+        <button type="submit">Enviar</button>
+        <div id="entradas">
+          <!-- Aquí se mostrarán las entradas agregadas -->
+        </div>
+    
+        <script src="Admin.js"></script>
+      </form>
 </body>
 </html>
