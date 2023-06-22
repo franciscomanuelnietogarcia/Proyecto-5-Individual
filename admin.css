@@ -2,6 +2,7 @@
     font-family: AlexBrush-Regular;
     src: url(Letras/AlexBrush-Regular.ttf);
 }
+
 header {
     border: 2px solid black;
     background-color: #CCD1D1;
@@ -33,6 +34,7 @@ nav ul li a:hover {
     background-color: #333;
     color: #fff;
 }
+
 #entradas {
-   background-color: aquamarine;
+    background-color: aquamarine;
 }

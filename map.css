@@ -31,7 +31,6 @@ nav ul li a:hover {
     background-color: #333;
     color: #fff;
 }
-/* boton volver arriba */
 .boton-flotante {
     display: none;
     position: fixed;
@@ -58,7 +57,6 @@ nav ul li a:hover {
     width: 88%;
     margin-left: 6%;
   }
-  /* Estilos para dispositivos móviles */
 
 @media (max-width: 768px) {
     .grid-container {
